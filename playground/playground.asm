@@ -30,7 +30,6 @@ StartFrame:
 	REPEAT 30
 		sta WSYNC
 	REPEND
-	lda #0
 	sta VBLANK
 
 	
@@ -46,9 +45,8 @@ StartFrame:
 	REPEND
 
 
-	ldx #%11100000
-	stx PF0
 	ldx #%11111111
+	stx PF0
 	stx PF1
 	stx PF2
 	REPEAT 7
@@ -64,9 +62,8 @@ StartFrame:
 		sta WSYNC
 	REPEND
 
-	ldx #%11100000
-	stx PF0
 	ldx #%11111111
+	stx PF0
 	stx PF1
 	stx PF2
 	REPEAT 7
