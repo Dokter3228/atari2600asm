@@ -53,10 +53,11 @@ StartFrame:
 		sta WSYNC
 	REPEND
 
-	ldx #%0010000
+	ldx #%00110000
 	stx PF0
 	ldx #0
 	stx PF1
+	ldx #%10000000
 	stx PF2
 	REPEAT 164
 		sta WSYNC
